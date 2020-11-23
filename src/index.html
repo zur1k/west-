@@ -16,15 +16,15 @@
   <body>
     <header class="header">
       <div class="container header__inner">
-        <div class="row d-flex justify-content-between">
-          <div class="col-4">
+        <div class="row d-xl-flexjustify-content-between">
+          <div class="col-4 ">
             <a href="#">
               <img class="logo" src="images/logo.png" alt="logo" />
             </a>
           </div>
-          <div class="col-8 d-flex align-items-center justify-content-end">
+          <div class="col-8">
             <nav>
-              <ul class="menu d-flex">
+              <ul class="menu d-flex justify-content-around">
                 <li class="menu__item">
                   <a class="menu__item-link" href="#">Features</a>
                 </li>
@@ -42,10 +42,12 @@
                 </li>
                 <li class="menu__item">
                   <a class="menu__item-link" href="#">Contact us</a>
-                </li>
+                </li  class="menu__item">
+                <li>
+                  <a class="signin__btn" href="#">Try it</a></li>
               </ul>
             </nav>
-            <a class="signin__btn" href="#">Try it</a>
+            
           </div>
         </div>
       </div>
@@ -53,8 +55,8 @@
 
     <section class="hero">
       <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-7">
+        <div class="row d-flex justify-content-xl-start justify-content-md-center">
+          <div class="col-xl-6 col-md-8 ">
             <h1 class="hero__title">
               <span>Smart business processes</span><br />for automating supply
               chains and inventory management
@@ -96,21 +98,21 @@
               </a>
             </div>
           </div>
-          <div class="col-5">
+          <!-- <div class="col-5">
             <img
               class="hero__img"
               src="./images/hero-img.png"
               alt="ring"
               class="hero__img"
             />
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
     <section class="border">
       <div class="container">
         <div class="row">
-          <div class="col-10">
+          <div class="col-xl-10 ">
             <p class="border__text">
               Get started with Got-it, a fully-functioning asset-tracking demo
               application implementing our Checklist workflow. It provides
@@ -131,71 +133,69 @@
             </h2>
           </div>
         </div>
-        <div class="row d-flex justify-content-lg-between">
-          <div class="col getstarted__item">
+        <div class="row d-flex justify-content-xl-center justify-content-md-around justify-content-sm-center">
+          <div class=" col-xl-2 col-md-5 col-sm-5  getstarted__item">
             <h3 class="getstarted__item-title">Checklist</h3>
             <p class="getstarted__item-text">
               Ensure supplies and tools onboard utility vehicles match work
               orders for the day.
             </p>
           </div>
-          <div class="col getstarted__item">
+          <div class="col-xl-2 col-md-5 col-sm-5 getstarted__item">
             <h3 class="getstarted__item-title">Smart Deliveries</h3>
             <p class="getstarted__item-text">
               Send smart shipping labels that self report their arrival back to
               your RMA support team.
             </p>
           </div>
-          <div class="col getstarted__item">
+          <div class="col-xl-2 col-md-5 col-sm-5 getstarted__item">
             <h3 class="getstarted__item-title">Theft Control</h3>
             <p class="getstarted__item-text">
               Valuable assets moved from specific areas trigger security alerts
               and camera footage.
             </p>
           </div>
-          <div class="col getstarted__item">
+          <div class="col-xl-2 col-md-5 col-sm-5  getstarted__item">
             <h3 class="getstarted__item-title">MRO</h3>
             <p class="getstarted__item-text">
               Equipment moved to maintenance and repair areas automatically
               generate repair tickets.
             </p>
           </div>
-          <div class="col getstarted__item">
+          <div class="col-xl-2 col-md-5 col-sm-5  getstarted__item">
             <h3 class="getstarted__item-title">Health and Safety Controls</h3>
             <p class="getstarted__item-text">
               Send smart shipping labels that self report their arrival back to
               your RMA support team.
             </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col getstarted__item">
+          </div>  
+          <div class="col-xl-2 col-md-5 col-sm-5 getstarted__item">
             <h3 class="getstarted__item-title">Storage</h3>
             <p class="getstarted__item-text">
               Items placed into storage automatically catalog themselves.
             </p>
           </div>
-          <div class="col getstarted__item">
+          <div class="col-xl-2 col-md-5 col-sm-5 getstarted__item">
             <h3 class="getstarted__item-title">Just-in-Time</h3>
             <p class="getstarted__item-text">
               The arrival of parts or inventory green-light the start of a
               project or production.
             </p>
           </div>
-          <div class="col getstarted__item">
+          <div class="col-xl-2 col-md-5 col-sm-5 getstarted__item">
             <h3 class="getstarted__item-title">Everything-In-Place</h3>
             <p class="getstarted__item-text">
               Movement of mission critical tools or hazardous materials trigger
               safety protocols if moved out of range.
             </p>
           </div>
-          <div class="col getstarted__item">
+          <div class="col-xl-2 col-md-5 col-sm-5 getstarted__item">
             <h3 class="getstarted__item-title">Warehouse</h3>
             <p class="getstarted__item-text">
               Audit inventory counts and location of stock.
             </p>
           </div>
-          <div class="col getstarted__item">
+          <div class="col-xl-2 col-md-5 col-sm-5 getstarted__item">
             <h3 class="getstarted__item-title">Perishables</h3>
             <p class="getstarted__item-text">
               Schedule a special delivery when perishable goods are about to go
@@ -206,7 +206,7 @@
       </div>
     </section>
 
-    <section class="benefits">
+    <!-- <section class="benefits">
       <div class="container">
         <h2 class="title">
           Automated workflows start with data automatically generated with
@@ -446,11 +446,14 @@
                   <li class="menu__item">
                     <a class="footer-menu__item-link" href="#">Contact us</a>
                   </li>
+                  <li>
+                    <a class="signin__btn" href="#">Try it</a>
+                  </li class="menu__item">
                 </ul>
               </nav>
-              <a class="signin__btn" href="#">Try it</a>
+     
             </div>
-        
+            
         </div>
         <div class="row">
           <div class="col-4">
@@ -459,6 +462,6 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

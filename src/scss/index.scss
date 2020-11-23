@@ -28,7 +28,7 @@ h6 {
   font-weight: 700;
   line-height: 1.3;
 }
-img { 
+img {
   display: inline-block;
 }
 
@@ -50,7 +50,10 @@ li {
 .logo {
   display: block;
   width: 100px;
+  position: absolute;
+  left: 0;
   height: 25px;
+  padding: 0;
 }
 
 .title {
@@ -66,7 +69,6 @@ li {
 
 .menu {
   &__item-link {
-    margin-left: 30px;
     font-weight: 500;
     font-size: 15px;
     line-height: 1.3;
@@ -86,7 +88,6 @@ li {
 
 .signin__btn {
   position: relative;
-  margin-left: 30px;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.3;
@@ -111,13 +112,19 @@ li {
 }
 
 .hero {
- 
-
   // background-image:url(../images/hero-img.png);
 
-  background: url(../images/hero-img.png) , linear-gradient(107.89deg, #E1DDDB 0%, #F2F1ED 21.28%, #FDFCF9 65.53%, #E6E0DD 100.12%);
+  background: url(../images/hero-img.png),
+    linear-gradient(
+      107.89deg,
+      #e1dddb 0%,
+      #f2f1ed 21.28%,
+      #fdfcf9 65.53%,
+      #e6e0dd 100.12%
+    );
   background-repeat: no-repeat;
   background-position-x: 100%;
+  background-size: contain;
   background-position-y: 25%;
   padding-bottom: 134px;
   &__title {
@@ -244,11 +251,9 @@ li {
     border-image-slice: 1;
 
     min-height: 222px;
-    margin-right: 15px;
+    margin-right: 6px;
+    margin-left: 6px;
     margin-bottom: 14px;
-  }
-  &__item:last-child {
-    margin-right: 0;
   }
   &__item-title {
     font-family: "Oswald", sans-serif;
@@ -487,7 +492,7 @@ li {
 .footer {
   background: #514e55;
   padding-top: 43px;
-  
+
   &-menu__wrapper {
     padding-bottom: 20px;
     position: relative;
@@ -495,11 +500,10 @@ li {
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;  
-      border:1px solid #757378;
-      width: 97%; 
-      right: 19px;
-
+      bottom: 0;
+      border: 1px solid #757378;
+      width: 99%;
+      right: 1%;
     }
   }
   .signin__btn {
@@ -517,10 +521,101 @@ li {
       color: #fff;
     }
   }
-  &__info { 
-   color: #757378;
+  &__info {
+    color: #757378;
   }
-  &__info:last-child { 
+  &__info:last-child {
     margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 1370px) {
+  .hero {
+    background-position-x: 137%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    display: none !important;
+  }
+  .hero__title {
+    text-transform: uppercase;
+    padding-top: 110px;
+    font-size: 40px;
+  }
+  .hero {
+    background: linear-gradient(
+      107.89deg,
+      #e1dddb 0%,
+      #f2f1ed 21.28%,
+      #fdfcf9 65.53%,
+      #e6e0dd 100.12%
+    );
+    padding-bottom: 100px;
+  }
+  .getstarted__item-text {
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.3;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__btns {
+    justify-content: center;
+  }
+  .hero__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+
+  .border__text {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #2e2b32;
+  }
+  .border {
+    background: #ced5d8;
+    padding: 15px 0 16px;
+  }
+  .getstarted .title {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+  .hero__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .hero__text {
+    font-size: 16px;
+  }
+
+  .hero__btn {
+    font-size: 14px;
+
+    padding: 12px 10px 12px 18px;
   }
 }
