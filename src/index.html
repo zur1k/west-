@@ -18,42 +18,45 @@
       <div class="container header__inner">
         <div class="row d-xl-flexjustify-content-between">
           <div class="col-4 ">
-            <a href="#">
+            <a href="#features">
               <img class="logo" src="images/logo.png" alt="logo" />
             </a>
           </div>
-          <div class="col-8">
+          <div class="col-lg-8 col-s-12 container-fluid">
             <nav>
-              <ul class="menu d-flex justify-content-around">
+              <ul id="nav" class="menu d-lg-flex justify-content-lg-around ">
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Features</a>
+                  <a id="nav" class="menu__item-link" href="#features">Features</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Templates</a>
+                  <a class="menu__item-link" href="#templates">Templates</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Demo</a>
+                  <a class="menu__item-link" href="#demo">Demo</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Pricing</a>
+                  <a class="menu__item-link" href="#pricing">Pricing</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Integrations</a>
+                  <a class="menu__item-link" href="#integration">Integrations</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__item-link" href="#">Contact us</a>
+                  <a class="menu__item-link" href="#contactus">Contact us</a>
                 </li  class="menu__item">
                 <li>
                   <a class="signin__btn" href="#">Try it</a></li>
               </ul>
             </nav>
+            <button id="nav-toggle" class="nav-toggle" id="nav_toggle" type="button">
+              <span class="nav-toggle__item">Menu</span>
+             </button>
             
           </div>
         </div>
       </div>
     </header>
 
-    <section class="hero">
+    <section id="features" class="hero">
       <div class="container">
         <div class="row d-flex justify-content-xl-start justify-content-md-center">
           <div class="col-xl-6 col-md-8 ">
@@ -123,7 +126,7 @@
         </div>
       </div>
     </section>
-    <section class="getstarted">
+    <section id="templates" class="getstarted">
       <div class="container">
         <div class="row justify-content-center d-flex">
           <div class="col-8">
@@ -155,7 +158,7 @@
               and camera footage.
             </p>
           </div>
-          <div class="col-xl-2 col-md-5 col-sm-5  getstarted__item">
+          <div class="col-xl-2 col-md-5 col-sm-5 getstarted__item">
             <h3 class="getstarted__item-title">MRO</h3>
             <p class="getstarted__item-text">
               Equipment moved to maintenance and repair areas automatically
@@ -206,97 +209,61 @@
       </div>
     </section>
 
-    <!-- <section class="benefits">
+    <section class="demo">
       <div class="container">
         <h2 class="title">
           Automated workflows start with data automatically generated with
           <span>Reelables smart labels </span>
         </h2>
-        <div class="benefits__box row">
-          <div class="col-5 benefits__img--wrapper">
-            <img
-              class="benefits__img"
-              src="./images/benefits-1.png"
-              alt="item box"
-            />
+        <div class="row d-flex justify-content-around ">
+          <div class="col-sm-12 col-lg-5 demo__wrapper d-flex justify-content-center">
+            <img class="demo__img" src="./images/benefits-1.png" alt="">
           </div>
-          <div class="col-5 d-flex align-items-center">
-            <p class="benefits__text">
-              Make the time consuming and error-prone process of manual scanning
-              or inventory auditing a thing of the past. Reelables Bluetooth
-              labels signal the presence of stock deep inside pallets and
-              cartons anywhere in a warehouse or loading bay. No need for RFID
-              chokepoints.
-            </p>
+          <div class="col-lg-5 d-flex align-items-center demo__content" >
+            <p class="demo__text">Make the time consuming and error-prone process of manual scanning or inventory auditing a thing of the past. Reelables Bluetooth labels signal the presence of stock deep inside pallets and cartons anywhere in a warehouse or loading bay. No need for RFID chokepoints.</p>
           </div>
         </div>
-        <div class="benefits__box row">
-          <div class="col-5 d-flex align-items-center">
-            <p class="benefits__text">
-              Drive ultra efficient Just-in-Time processes with triggers fired
-              the moment labelled assets arrive or change custody. Reelables’
-              labels enable events when moved in about out of geo-regions,
-              zones, or from one truck to the next.
-            </p>
+
+        <div class="row d-flex justify-content-md-around flex-column-reverse flex-lg-row">
+          <div class="col-lg-5  d-flex align-items-center demo__content">
+            <p class="demo__text">Drive ultra efficient Just-in-Time processes with triggers fired the moment labelled assets arrive or change custody. Reelables’ labels enable events when moved in about out of geo-regions, zones, or from one truck to the next.</p>
           </div>
-          <div class="col-5 benefits__img--wrapper-even">
-            <img class="benefits__img" src="./images/map.png" alt="item box" />
-            <img
-              class="benefits__img benefits__img--geo"
-              src="./images/geo.png"
-              alt="item box"
-            />
+          <div class="d-flex justify-content-center col-lg-5 demo__geo demo__wrapper-even">
+            <img class="demo__img" src="./images/map.png" alt="">
           </div>
         </div>
-        <div class="row">
-          <div
-            class="benefits__box col-5 benefits__img--wrapper d-flex justify-content-center"
-          >
-            <img
-              class="benefits__img benefits__img--iphone"
-              src="./images/iphone.png"
-              alt="item box"
-            />
-            <img
-              class="benefits__img"
-              src="./images/router-2.png"
-              alt="item box"
-            />
-            <img
-              class="benefits__img benefits__img--router"
-              src="./images/router-3.png"
-              alt="item box"
-            />
+
+        <div class="row d-flex justify-content-around"> 
+          <div class="col-lg-5 d-flex justify-content-center demo__wrapper">
+            <img class="demo__img" src="./images/router-white.png" alt="">
+            <img class="demo__img demo__img--iphone" src="./images/iphone.png" alt="">
+            <img class="demo__img demo__img--black" src="./images/router-black.png" alt="">
           </div>
-          <div class="col-5 d-flex flex-column justify-content-center">
-            <p class="benefits__text">
-              Implement asset tracking applications without invasive
-              infrastructure. Reelables’ labels work seamlessly with our simple
-              smart power outlets to bring data to the cloud. Since they’re
-              Bluetooth they also work with our partner’s equipment and phones
-              themselves.
-            </p>
-            <p class="benefits__text benefits__text--mod">
-              <span>Pluggable Gateway WiFi — </span>For warehousing bays,
-              loading docks, or factory floors.
-            </p>
-            <p class="benefits__text benefits__text--mod">
-              <span>GPS Gateway 3G/4G/LTE Worldwide — </span>For trucks,
-              cartons, or large shipments.
-            </p>
-            <p class="benefits__text benefits__text--mod">
-              <span>iPhone or Android — </span>For portable tracking in the
-              field.
-            </p>
+          <div class="col-lg-5 demo__content">
+            <p class="demo__text">Implement asset tracking
+              applications without invasive infrastructure. Reelables’ labels work seamlessly with our simple smart power outlets to bring data to the cloud. Since they’re Bluetooth they also work with our partner’s equipment and phones themselves.</p>
+              <p class="demo__text demo__text--mod">
+                <span>Pluggable Gateway WiFi — </span>For warehousing bays,
+                loading docks, or factory floors.
+              </p>
+              <p class="demo__text demo__text--mod">
+                <span>GPS Gateway 3G/4G/LTE Worldwide — </span>For trucks,
+                cartons, or large shipments.
+              </p>
+              <p class="demo__text demo__text--mod">
+                <span>iPhone or Android — </span>For portable tracking in the
+                field.
+              </p>
           </div>
         </div>
       </div>
     </section>
+
     <section class="banner">
       <div class="container">
         <h2 class="title">Bluetooth smart labels at $1 in volume</h2>
         <div class="row">
-          <div class="col-6">
+          <div class="col-lg-6">
             <p class="banner__text">
               Reelables’ labels come on reels and feed into industrial printers.
               They stick to packages, shipping labels, boxes of inventory,
@@ -306,14 +273,15 @@
         </div>
       </div>
     </section>
-    <section class="aboutus">
+
+    <section id="pricing" class="aboutus">
       <div class="container">
         <h2 class="title">How it works</h2>
-        <div class="row">
-          <div class="col-5">
+        <div class="row d-sm-flex justify-content-center flex-md-column flex-lg-column  flex-xl-row align-items-sm-center ">
+          <div class="col-12 col-lg-5">
             <div class="aboutus__item"></div>
           </div>
-          <div class="col-7">
+          <div class=" col-12 col-lg-7 aboutus__content">
             <p class="abiutus__text">
               Provisioning takes place at the point of manufacture or
               distribution when inventory is ordinarily barcoded. Reelables are
@@ -343,10 +311,10 @@
         </div>
       </div>
     </section>
-    <section class="integration">
+    <section id="integration" class="integration">
       <div class="container">
         <div class="row">
-          <div class="col-5 d-flex">
+          <div class="col-xl-5 col-lg-10 d-flex">
             <ul>
               <li class="d-flex">
                 <span class="integration__text-number">1.</span>
@@ -373,11 +341,11 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section id="contactus" class="contacts">
       <h2 class="title">Contact us</h2>
       <div class="container">
         <div class="row">
-          <div class="contacts__wrapper col-6 m-auto"> 
+          <div class="contacts__wrapper col-lg-6 m-auto"> 
             <form class="contacts__form">
               <div class="contacts__item d-flex flex-column">
                 <label for="">Company *</label>
@@ -392,7 +360,7 @@
               </div>
             </form>
 
-            <div class="contacts__btns d-flex justify-content-between">
+            <div class="contacts__btns d-flex justify-content-between flex-column flex-md-row text-center">
               <a class="btn contacts__btn" href="#">Send
                 <svg
                     width="23"
@@ -425,26 +393,26 @@
                 <img class="logo" src="images/logo-2.png" alt="logo" />
               </a>
             </div>
-            <div class="col-9 d-flex align-items-center justify-content-end">
+            <div class="col-lg-8 col-s-12 container-fluid">
               <nav>
-                <ul class="menu d-flex">
+                <ul class="menu d-lg-flex justify-content-lg-around">
                   <li class="menu__item">
-                    <a class="footer-menu__item-link" href="#">Features</a>
+                    <a class="footer-menu__item-link" href="#features">Features</a>
                   </li>
                   <li class="menu__item">
-                    <a class="footer-menu__item-link" href="#">Templates</a>
+                    <a class="footer-menu__item-link" href="#templates">Templates</a>
                   </li>
                   <li class="menu__item">
-                    <a class="footer-menu__item-link" href="#">Demo</a>
+                    <a class="footer-menu__item-link" href="#demo">Demo</a>
                   </li>
                   <li class="menu__item">
-                    <a class="footer-menu__item-link" href="#">Pricing</a>
+                    <a class="footer-menu__item-link" href="#pricing">Pricing</a>
                   </li>
                   <li class="menu__item">
-                    <a class="footer-menu__item-link" href="#">Integrations</a>
+                    <a class="footer-menu__item-link" href="#integration">Integrations</a>
                   </li>
                   <li class="menu__item">
-                    <a class="footer-menu__item-link" href="#">Contact us</a>
+                    <a  class="footer-menu__item-link" href="#contactus">Contact us</a>
                   </li>
                   <li>
                     <a class="signin__btn" href="#">Try it</a>
@@ -462,6 +430,9 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer> 
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
